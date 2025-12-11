@@ -15,7 +15,7 @@ int main()
 	Password pwd;
 	std::cin >> pwd.value;
 
-	//if you enter exactly 16 charecters, it has no room for '\0' at the end, so it returns garbage value 0 
+	//if you enter exactly 16 charecters, it has no room for '\0' at the end, so it returns garbage value 0
 	if (!strcmp(pwd.value, "********"))
 		pwd.incorrect = false;
 
