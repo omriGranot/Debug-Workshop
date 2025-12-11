@@ -4,9 +4,13 @@
 char* string_copy(char* dest, unsigned int destsize, char* src)
 {
 	char* ret = dest;
-	while (*dest++ = *src++)
-		;
-	ret[destsize - 1] = '\0';
+	int i = 0;
+	while (i < destsize - 1)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	ret[destsize - 1] = 0;
 	return ret;
 }
 
@@ -20,6 +24,4 @@ void part1()
 
 	std::cout << src << std::endl;
 	std::cout << dest << std::endl;
-
-	return;
 }
